@@ -19,7 +19,7 @@ gulp.task("sass", function() {
     .on("error", sass.logError)
     .pipe(autoprefixer())
     .pipe(gulp.dest("./public/css"))
-    .pipe(connect.reload());
+    .pipe(connect.reload())
 });
 
 //watch
